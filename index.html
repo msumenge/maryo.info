@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="./images/icon.ico"> <!-- type="image/png" -->
+	<title>Maryo | Web Developer</title>
+
+	<!-- Bootstrap -->
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Font Awesome -->
+	<link href="./css/font-awesome.min.css" rel="stylesheet">
+	
+	<!-- jQuery -->
+	<script src="./js/jquery-2.2.1.min.js"></script>
+	<script src="./js/jquery.scrollTo.min.js"></script>
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	
+	<!-- Site -->
+	<link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="nav-container">
+        <div id="profile-picture" class="bg-cover" style="background-image: url(./images/maryo.png);"></div>
+        <h1 class="text-center">Maryo J Sumenge</h1>
+        <h4 class="text-center marg-0">Web Developer</h4>
+        <div id="nav-contact">
+            <div class="nav-icon pulse pulse-4s-20" data-target="email"><i class="fa fa-envelope"></i></div>
+            <div class="nav-icon pulse pulse-4s-40" data-target="email-address"><i class="fa fa-at"></i></div>
+            <div class="nav-icon pulse pulse-4s-60" data-target="phone"><i class="fa fa-phone"></i></div>
+            <div class="nav-icon pulse pulse-4s-80" data-target="location"><i class="fa fa-map-marker"></i></div>
+            <br>
+            <div id="contact-info" class="animate">
+                <div id="contact-form">
+                    <div class="form-feedback"></div>
+                    <div id="contact-form-name" class="float-label marg-top-15 halfwidth">
+                        <span class="animate">Name</span>
+                        <input type="text" class="form-control fullwidth" required />
+                    </div>
+                    <div id="contact-form-email" class="float-label marg-top-15 halfwidth">
+                        <span class="animate">Email</span>
+                        <input type="email" class="form-control fullwidth" required />
+                    </div>
+                    <div id="contact-form-msg">
+                        <span>Message</span>
+                        <textarea></textarea>
+                    </div>
+                    <div style="padding: 0px 20px;">
+                        <button class="btn btn-primary fullwidth" onclick="javascript:send_email();">Send</button>
+                    </div>
+                    <div class="ajax-loading">
+                        <i class="fa fa-circle-o-notch fa-spin"></i>
+                    </div>
+                </div>
+                <div id="contact-number">
+                    <h2 class="marg-0">0432 279 374</h2>
+                </div>
+                <div id="contact-email">
+                    <h2 class="marg-0"><a href="mailto:msumenge@hotmail.com">msumenge@hotmail.com</a></h2>
+                </div>
+                <iframe id="contact-location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28313.402687364167!2d152.96324482016334!3d-27.494922035939126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b9150e7d2cca087%3A0x502a35af3de9a60!2sTaringa+QLD+4068!5e0!3m2!1sen!2sau!4v1456325539182" allowfullscreen style="width: 100%; height: 296px;"></iframe>
+            </div>
+        </div>
+        <div id="nav-profile" class="marg-auto icon-container">
+            <span class="nav-label">Profile</span>
+            <div class="nav-icon" data-target="about"><i class="fa fa-info"></i></div>
+            <div class="nav-icon" data-target="education"><i class="fa fa-graduation-cap"></i></div>
+            <div class="nav-icon" data-target="skills"><i class="fa fa-code"></i></div>
+            <div class="nav-icon" data-target="employment"><i class="fa fa-briefcase"></i></div>
+            <div class="nav-icon" data-target="portfolio"><i class="fa fa-folder-open"></i></div>
+            <div class="nav-icon" data-target="availability"><i class="fa fa-calendar"></i></div>
+            <div class="nav-icon" data-target="github"><a href="https://github.com/msumenge" target="_blank"><i class="fa fa-github"></i></a></div>
+        </div>
+        <div id="nav-action" class="marg-auto icon-container">
+            <span class="nav-label">Get a copy</span>
+            <a href="./files/Maryo%20J%20Sumenge%20-%20Resume.pdf" class="button" target="_blank">
+                <div class="nav-icon"><i class="fa fa-print"></i></div>
+            </a>
+            <a href="./files/Maryo%20J%20Sumenge%20-%20Resume.pdf" class="button" download="Maryo Sumenge - Resume.pdf" >
+                <div class="nav-icon"><i class="fa fa-download"></i></div>
+            </a>
+        </div>
+    </div>
+    
+    <div id="profile-container">
+        <div id="profile-about" class="animate">
+            <div class="profile-icon">
+                <i class="fa fa-info"></i>
+                <br>
+                About me
+            </div>
+            Junior web designer, developer and software programmer with one-year client and server side programming language experience. Seeking position in a challenging and rewarding tech environment where I can expand upon my existing skills base while contributing to a lively IT team. Additional background includes working in a team based project using a FDD methodology.
+        </div>
+        
+        
+        <div id="profile-education">
+            <div class="profile-icon">
+                <i class="fa fa-graduation-cap"></i>
+                <br>
+                Education
+            </div>
+            <div class="edu-item edu-iten-uni">
+                <p class="edu-date">2013 - CURRENT</p>
+                <h3>Bachelor of Interactive Technology (Web development)</h3>
+                <p class="edu-location">
+                    <i class="fa fa-university"></i> &nbsp;SAE Qantm Brisbane
+                </p>
+            </div>
+            <div class="edu-item">
+                <p class="edu-date">2012</p>
+                <h3 id="yr12">Graduated Year 12</h3>
+                <p class="edu-location">
+                    <i class="fa fa-university"></i> &nbsp;Ferny Grove State High School
+                </p>
+            </div>
+            <div id="edu-timeline">
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        
+        <div id="profile-skills">
+            <div class="profile-icon">
+                <i class="fa fa-code"></i>
+                <br>
+                Key Skills
+            </div>
+            <div style="position:relative;">
+                <i class="fa fa-circle" id="window-min"></i>
+                <i class="fa fa-circle" id="window-max"></i>
+                <i class="fa fa-circle" id="window-close"></i>
+                <ul id="skill-list">
+                    <li>HTML5, CSS3 and JS</li>
+                    <li>jQuery and Ajax</li>
+                    <li>PHP and MySQL</li>
+                    <li>LESS and SASS</li>
+                    <li>UI and UX design</li>
+                    <li>CMS and Database design</li>
+                    <li>Codeigniter PHP Framework</li>
+                    <li>Bootstrap HTML5 Framework</li>
+                    <li>Angular JS Framework</li>
+                    <li>PayPal APIs</li>
+                    <li>Photoshop and Dreamweaver</li>
+                    <li>Project management</li>
+                    <li>GitHub</li>
+                    <li>WordPress<span id="blinking-underline" class="no-select">_</span></li>
+                    <i class="fa fa-angle-right" id="line-indicator"></i>
+                </ul>
+            </div>
+        </div>
+        
+        <div id="profile-employment">
+            <div class="profile-icon">
+                <i class="fa fa-briefcase"></i>
+                <br>
+                Employment History
+            </div>
+            <div id="employment-card">
+                <div class="card">
+                    <div class="bg-cover" style="background-image: url(images/sigma.png);"></div>
+                    <h3>Sigma Digital</h3>
+                    <h4>Develop and maintain website</h4>
+                    <span>September 2015 - CURRENT</span>
+                </div>
+                <div class="card">
+                    <div class="bg-cover" style="background-image: url(images/spotless.png);"></div>
+                    <h3>Spotless</h3>
+                    <h4>Cleaning and building maintanance</h4>
+                    <span>March 2012 - CURRENT</span>
+                </div>
+            </div>
+        </div>
+        
+        <div id="profile-portfolio">
+            <div class="profile-icon">
+                <i class="fa fa-folder-open"></i>
+                <br>
+                Portfolio
+            </div>
+            <div class="portfolio-container">
+                <div class="bg-contain" style="background-image: url(./images/handsomedragon.png);"><a href="http://handsomedragongames.com/" target="_blank"></a></div>
+                <div class="bg-contain" style="background-image: url(./images/tuffweed.png);"><a href="https://www.tuffweed.com.au/" target="_blank"></a></div>
+                <div class="bg-contain" style="background-image: url(./images/redflowers.png);"><a href="http://redflowersfamilydaycare.com.au/" target="_blank"></a></div>
+                <div class="bg-contain" style="background-image: url(./images/sigma.png);"><a href="http://sigmadigital.com.au/" target="_blank"></a></div>
+                <div class="bg-contain" style="background-image: url(./images/enhance.png);"><a href="http://designbynina.com.au/example/enhancemag/" target="_blank"></a></div>
+                <div class="bg-contain" style="background-image: url(./images/sae.png);"><a href="https://github.com/jamesamac/ModuleGuideManagement" target="_blank"></a></div>
+                <div class="bg-contain" style="background-image: url(./images/toms.png);"><a href="./portfolio/tom/" target="_blank"></a></div>
+            </div>
+        </div>
+        
+        <div id="profile-availability">
+            <div class="profile-icon">
+                <i class="fa fa-calendar"></i>
+                <br>
+                Availability
+                <div class="overflow-x" id="clock-container">
+                    <div id="availability"></div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <footer>
+        Copyright &copy; 2016 Maryo Sumenge. All rights reserved.
+        <span id="back-to-top" class="pull-right">Back to top <i class="fa fa-arrow-up"></i></span>
+    </footer>
+    
+    <div id="nav2-profile" class="animate">
+        <div class="nav-icon" data-target="about"><i class="fa fa-info"></i></div>
+        <div class="nav-icon" data-target="education"><i class="fa fa-graduation-cap"></i></div>
+        <div class="nav-icon" data-target="skills"><i class="fa fa-code"></i></div>
+        <div class="nav-icon" data-target="employment"><i class="fa fa-briefcase"></i></div>
+        <div class="nav-icon" data-target="portfolio"><i class="fa fa-folder-open"></i></div>
+        <div class="nav-icon" data-target="availability"><i class="fa fa-calendar"></i></div>
+        <div class="nav-icon" data-target="github"><a href="https://github.com/msumenge" target="_blank"><i class="fa fa-github"></i></a></div>
+    </div>
+	
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Site -->
+    <script src="./js/javascript.js"></script>
+	<script>
+		$(document).ready(function() {
+			reCalcPos();
+            setInterval(function(){ 
+                $('#blinking-underline').toggle();
+            }, 500);
+            
+            availability('monday', '8am', '6pm');
+			availability('tuesday', '8am', '6pm');
+			availability('wednesday', '8am', '6pm');
+			availability('thursday', '8pm', '6pm');
+			availability('friday', '8am', '8pm');
+			availability('saturday', '8am', '4pm');
+			availability('sunday', '8pm', '6pm');
+		});
+         
+        $(window)
+            .resize(function () {
+                reCalcPos();
+            })
+            .scroll(function () {
+                if ($(this).scrollTop() > $('#nav-action').position().top) {
+                    $('#nav2-profile').css('right', '0px');
+                } else {
+                    $('#nav2-profile').css('right', '-90px');
+                }
+            
+                if ($(this).scrollTop() > 1) {
+                    $('body, .nav-label').css('background-color', '#FFFFFF');
+                } else {
+                    $('body, .nav-label').css('background-color', '#7CB9E8');
+                }
+        });
+	</script>
+</body>
+</html>

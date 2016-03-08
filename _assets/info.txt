@@ -1,0 +1,6 @@
+Bootstrap 3.3.6
+jQuery 2.2.1
+Font Awesome 4.5.0
+TitilliumWeb-Light.ttf
+OpenSans-Regular.ttf
+Consolas.ttf

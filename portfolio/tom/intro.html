@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="./images/icon.ico"> <!-- type="image/png" -->
+	<title>Tom's Memory Planks</title>
+
+	<!-- Bootstrap -->
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Font Awesome -->
+	<link href="./css/font-awesome.min.css" rel="stylesheet">
+	
+	<!-- jQuery -->
+	<script src="./js/jquery-1.11.1.min.js"></script>
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	
+	<!-- Site -->
+	<link href="./css/style.css" rel="stylesheet">
+	<script src="./js/javascript.js"></script>
+	
+	<!--  -->
+	<script src="./js/flip.min.js"></script>
+	
+	<style>
+		html {
+			height: 100%;
+		}
+		body {
+			background: url('images/background.png') no-repeat top center;
+			background-size: cover;
+			position: relative;
+			height: 100%;
+		}
+		#back_btn {
+			position: absolute;
+			top: 85%;
+			left: 0px;
+			height: 100px;
+			width: 160px;
+			background: url('images/back_button.png') no-repeat top center;
+			background-size: contain;
+		}
+		#left {
+			padding: 50px 50px 50px 0px;
+		}
+		#title {
+			height: 300px;
+			background: url('images/speech_bubble.png') no-repeat top center;
+			background-size: contain;
+		}
+		#yes_btn {
+			margin-top: 50px;
+			height: 120px;
+			background: url('images/yes_button.png') no-repeat top center;
+			background-size: contain;
+		}
+		#tom {
+			margin-top: 140px;
+			height: 530px;
+			width: 300px;
+			float: right;
+			background: url('images/tom.png') no-repeat top center;
+			background-size: contain;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5 col-sm-5">
+				<div id="tom"></div>
+			</div>
+			<div class="col-md-7 col-sm-7" id="left">
+				<div id="title"></div>
+				<a href="game.html"><div id="yes_btn"></div></a>
+			</div>
+		</div>
+	</div>
+	<a href="index.html"><div id="back_btn"></div></a>
+	
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

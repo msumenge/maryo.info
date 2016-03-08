@@ -1,0 +1,4 @@
+Bootstrap 3.3.2
+jQuery 1.11.2
+Font Awesome 4.3.0
+Raleway-Regular.ttf
